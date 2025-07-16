@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>أحمد علي الغروي</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="profile-photo.jpg" alt="الصورة الشخصية" class="profile-img">
+        <h1 class="name">أحمد علي الغروي</h1>
+        <p class="program">برنامج موهبة الأكاديمي - الصيفي 2025</p>
+        <p class="track">مسار كن مبرمجاً</p>
+        <p class="contact">
+            رقم الجوال: <a href="tel:0510722093">0510722093</a>
+        </p>
+        <nav class="main-nav">
+            <button onclick="showSection('home')">الرئيسية</button>
+            <button onclick="showSection('about')">نبذة عني</button>
+            <button onclick="showSection('goals')">أهدافي</button>
+            <button onclick="showSection('projects')">مشاريعي</button>
+            <button onclick="showSection('contact')">تواصل معي</button>
+        </nav>
+    </div>
+
+    <div id="home" class="section" style="display:block;">
+        <h2>الرئيسية</h2>
+        <p>مرحباً بك في صفحة أحمد علي الغروي!</p>
+    </div>
+    <div id="about" class="section" style="display:none;">
+        <h2>نبذة عني</h2>
+        <p>
+            مرحباً! أنا أحمد، أطمح لتطوير مهاراتي في البرمجة وصناعة المشاريع التقنية. شغوف بالتعلم المستمر، وأحب العمل الجماعي ومشاركة المعرفة.
+        </p>
+    </div>
+    <div id="goals" class="section" style="display:none;">
+        <h2>أهدافي</h2>
+        <ul>
+            <li>تعلم أساسيات البرمجة وتطوير مهاراتي في HTML و CSS.</li>
+            <li>برمجة مشاريع تعليمية وتفاعلية باستخدام سكراتش.</li>
+            <li>رفع أعمالي ومشاريعي على منصة GitHub.</li>
+            <li>المشاركة في الأنشطة والمسابقات البرمجية.</li>
+            <li>تطوير مهارات التواصل والعمل الجماعي.</li>
+        </ul>
+    </div>
+    <div id="projects" class="section" style="display:none;">
+        <h2>مشاريعي</h2>
+        <ul>
+            <li>برمجة مشاريع على سكراتش (Scratch) وتعلم أساسيات البرمجة البصرية.</li>
+            <li>إنشاء صفحات ويب باستخدام HTML و CSS.</li>
+            <li>رفع المشاريع والأعمال البرمجية على GitHub ومشاركتها مع الآخرين.</li>
+        </ul>
+    </div>
+    <div id="contact" class="section" style="display:none;">
+        <h2>تواصل معي</h2>
+        <p>للتواصل معي يرجى الاتصال على الرقم: <a href="tel:0510722093">0510722093</a></p>
+    </div>
+
+    <script>
+        function showSection(id) {
+            document.querySelectorAll('.section').forEach(function(sec){
+                sec.style.display = 'none';
+            });
+            document.getElementById(id).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
